@@ -1,0 +1,35 @@
+$font-size-base: 1.2rem;
+$primary: rgb(9, 204, 238);
+
+@import "lib/bootstrap/scss/bootstrap";
+
+
+/* ------------------------------- Navigation oben ---------------------------------------*/
+.page-header {
+    background-image: url(images/header-background.png);
+    background-size: cover;
+    background-repeat: no-repeat;
+     border-bottom: 2px solid $primary;
+    border-top: 1px solid $primary;
+    height: 800px;
+}
+
+.header-jumbotron {
+    padding-top: 100px;
+    color: white; 
+}
+
+h1 {
+    font-style: italic;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.btn-primary {
+   background-color:$primary;
+   color: black;
+   border: 1px solid white;
+   box-shadow: 2px 2px 10px white;
+   margin-top: 30px;
+
+}
