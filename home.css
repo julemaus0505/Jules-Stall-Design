@@ -11349,7 +11349,7 @@ textarea.form-control-lg {
 }
 /* ------------------------------- Navigation oben ---------------------------------------*/
 .page-header {
-  background-image: url(images/header-background.png);
+  background-image: url(images/Hintergrund/header-background.png);
   background-size: cover;
   background-repeat: no-repeat;
   border-bottom: 2px solid #09ccee;
@@ -11405,4 +11405,24 @@ h1, .h1 {
   width: 80px;
   height: auto;
   padding: 15px 15px 15px 10px;
+}
+
+.portfolio {
+  padding-top: 120px;
+  padding-bottom: 120px;
+  background-color: #f7f7f7;
+}
+
+.ueber-mich {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.ueber-mich-image {
+  border-radius: 50%;
+  border: 5px solid #f7f7f7;
+}
+
+.ueber-mich-list {
+  background: linear-gradient(to right, white 0%, white 49%, black 50%, white 51%, white 100%);
 }/*# sourceMappingURL=home.css.map */

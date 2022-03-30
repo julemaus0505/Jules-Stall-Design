@@ -2,6 +2,7 @@ $font-size-base: 1.2rem;
 $primary: rgb(9, 204, 238);
 
 $section-padding: 120px;
+$section-color-alternate: #f7f7f7;
 
 
 body {
@@ -13,7 +14,7 @@ body {
 
 /* ------------------------------- Navigation oben ---------------------------------------*/
 .page-header {
-    background-image: url(images/header-background.png);
+    background-image: url(images/Hintergrund/header-background.png);
     background-size: cover;
     background-repeat: no-repeat;
     border-bottom: 2px solid $primary;
@@ -77,4 +78,26 @@ h1 {
            padding: 15px 15px 15px 10px;
         }
     }
+}
+
+.portfolio {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+    background-color: $section-color-alternate; 
+}
+
+
+.ueber-mich {
+    padding-top: $section-padding;
+    padding-bottom: $section-padding;
+}
+
+.ueber-mich-image {
+    border-radius: 50%;
+    border: 5px solid $section-color-alternate ;
+    
+}
+
+.ueber-mich-list {
+    background: linear-gradient(to right, white 0%,  white 49%, black 50%,   white 51%, white 100%);
 }
