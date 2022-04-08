@@ -10,7 +10,7 @@
 
 <body>
     <header class="page-header">
-        <div class="container">
+        <div class="container container-header">
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
                     aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -19,23 +19,24 @@
                 <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
                     <ul class="navbar-nav">
                         <li class="nav-item">
-                            <a class="nav-link" href="#">Suche
-                                <ion-icon name="search-outline"></ion-icon>
+                            <a class="nav-link" href="#">
+                                <input id="suche-input" type="text" placeholder="Suche">
+                                <ion-icon class="icons" name="search-outline"></ion-icon>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Login
-                                <ion-icon name="person-outline"></ion-icon>
+                                <ion-icon class="icons" name="person-outline"></ion-icon>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Favoriten
-                                <ion-icon name="heart-outline"></ion-icon>
+                                <ion-icon class="icons" name="heart-outline"></ion-icon>
                             </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" href="#">Warenkorb
-                                <ion-icon name="cart-outline"></ion-icon>
+                                <ion-icon class="icons" name="cart-outline"></ion-icon>
                             </a>
                         </li>
                     </ul>
@@ -43,7 +44,7 @@
             </nav>
             <nav class="navbar navbar-expand-lg navbar-dark">
                 <div class="container-fluid">
-                    <a class="navbar-brand" href="Home">
+                    <a class="navbar-brand" href="home.html">
                         <img class="logo" src="images/Logo/logo.png" alt="" width="250" height="160">
                     </a>
                     <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
@@ -57,7 +58,7 @@
                                 <a class="nav-link active" aria-current="page" href="index.html">Home</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Über&nbsp;mich</a>
+                                <a class="nav-link" href="#ueber-mich">Über&nbsp;mich</a>
                             </li>
                             <li class="nav-item dropdown">
                                 <a class="nav-link dropdown-toggle" href="#" id="navbarDropdownMenuLink" role="button"
@@ -65,8 +66,7 @@
                                     Pferde&nbsp;Schilder
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Schilder</a></li>
-                                    <li><a class="dropdown-item" href="#">Boxenschilder</a></li>
+                                    <li><a class="dropdown-item" href="boxenschilder.html">Boxenschilder</a></li>
                                     <li><a class="dropdown-item" href="#">Spindschilder</a></li>
                                     <li><a class="dropdown-item" href="#">Warn & Schilder</a></li>
                                 </ul>
@@ -106,100 +106,54 @@
             </nav>
             <div
                 class="jumbotron header-jumbotron text-center d-flex flex-column justify-content-center align-items-center">
-                <h1 class="display-5">Herzlich Willkommen!</h1>
+                <h1 class="display-5 mt-5">Herzlich Willkommen!</h1>
                 <h5>individuelle Boxenschilder & Stallaustattung UV-beständig & Wetter-beständig.</h5>
                 <hr class="my-4">
-                <p>Du bist einzigartig und hast genung von Produkten von der Stange? Dann bist du bei Jules-Stall-Design
+                <p class="jumbo-text mb-5">Du bist einzigartig und hast genung von Produkten von der Stange? Dann bist
+                    du bei Jules-Stall-Design
                     genau richtig.
                     meine Produkte werden individuell, mit viel Liebe zum Detail, nach deinen Wünschen & Vorstellungen
                     gestaltet..
                 </p>
-                <a class="btn btn-primary" href="#" role="button">Kundenbewertung</a>
             </div>
         </div>
     </header>
     <article>
-        <section class="portfolio">
+        <section class="portfolio" id="portfolio">
             <div class="container">
                 <h3 class="text-center">Lieblingsprodukte</h3>
                 <p class="text-center text-muted fst-italic mb-5">Diese Referenzen sprechen für mich.</p>
-                <div class="row">
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="card text-center mb-5">
-                            <img src="images/FotosStarseite/Latina.jpg" class="card-img-top" alt="Latina">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Einzigartige Boxenschilder</h5>
-                                <h6 class="card-subtitle mb-2 text-muted text-center">Unsere Klassiker und schönsten
-                                    Modelle
-                                </h6>
-                                <a href="#" class="btn btn-primary">Details</a>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="card text-center mb-5">
-                            <img src="images/FotosStarseite/Billy.jpg" class="card-img-top" alt="Latina">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Einzigartige Boxenschilder</h5>
-                                <h6 class="card-subtitle mb-2 text-muted text-center">Unsere Klassiker und schönsten
-                                    Modelle
-                                </h6>
-                                <a href="#" class="btn btn-primary">Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="card text-center mb-5">
-                            <img src="images/FotosStarseite/Pocahontas.jpg" class="card-img-top" alt="Latina">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Einzigartige Boxenschilder</h5>
-                                <h6 class="card-subtitle mb-2 text-muted text-center">Unsere Klassiker und schönsten
-                                    Modelle
-                                </h6>
-                                <a href="#" class="btn btn-primary">Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="card text-center mb-5">
-                            <img src="images/FotosStarseite/HundeBild3.jpg" class="card-img-top" alt="Latina">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Einzigartige Tür & Hausschilder</h5>
-                                <h6 class="card-subtitle mb-2 text-muted text-center">Unsere Klassiker und schönsten
-                                    Modelle
-                                </h6>
-                                <a href="#" class="btn btn-primary">Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="card text-center mb-5">
-                            <img src="images/FotosStarseite/HundeBild4.png" class="card-img-top" alt="Latina">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Einzigartige Tür & Hausschilder</h5>
-                                <h6 class="card-subtitle mb-2 text-muted text-center">Unsere Klassiker und schönsten
-                                    Modelle
-                                </h6>
-                                <a href="#" class="btn btn-primary">Details</a>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-12 col-sm-6 col-md-4">
-                        <div class="card text-center mb-5">
-                            <img src="images/FotosStarseite/Restor.jpg" class="card-img-top" alt="Latina">
-                            <div class="card-body">
-                                <h5 class="card-title text-center">Einzigartige Boxenschilder</h5>
-                                <h6 class="card-subtitle mb-2 text-muted text-center">Unsere Klassiker und schönsten
-                                    Modelle
-                                </h6>
-                                <a href="#" class="btn btn-details btn-primary">Details</a>
-                            </div>
-                        </div>
-                    </div>
+                <div class="bilder">
+                    <ul id="galerie">
+                        <li>
+                            <button tabindex="1"><img src="images/SildeShow/pferdeBild14.jpg" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button tabindex="1"><img src="images/SildeShow/pferdeBild11.jpg" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button tabindex="1"><img src="images/SildeShow/pferdeBild2.jpg" alt="">
+                            </button>
+                        </li>
+                        <br>
+                        <li>
+                            <button tabindex="1"><img src="images/SildeShow/pferdeBild6.jpg" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button tabindex="1"><img src="images/SildeShow/pferdeBildeFo.jpg" alt="">
+                            </button>
+                        </li>
+                        <li>
+                            <button tabindex="1"><img src="images/SildeShow/pferdeBild4.jpg" alt="">
+                            </button>
+                        </li>
+                    </ul>
                 </div>
         </section>
-        <section class="ueber-mich">
+        <section class="ueber-mich" id="ueber-mich">
             <div class="container">
                 <h3 class="text-center">Über mich</h3>
                 <p class="text-center text-muted fst-italic mb-5">Das ist mein Geschichte.</p>
@@ -276,12 +230,10 @@
                 </div>
             </div>
         </section>
-
         <section class="team">
             <div class="container">
                 <h3 class="text-center">Unser Team</h3>
                 <p class="text-center text-muted font-italic mb-5">Das hier ist unser cooles Team!</p>
-
                 <div class="row">
                     <div class="col-12 col-sm-4">
                         <div class="row">
@@ -364,10 +316,6 @@
                 </p>
             </div>
         </section>
-
-
-
-
         <section class="services">
             <div class="container">
                 <h3 class="text-center">Mein persönlicher services</h3>
@@ -399,6 +347,65 @@
             </div>
             </div>
         </section>
+        <section class="kundenbewertung">
+            <div class="container">
+                <h3 class="text-center">Kundenbewertung</h3>
+                <p class="text-center text-muted fst-italic mb-5">Teile deine Kundenerfahrung mit anderen ★★★★★.</p>
+                <div class="kundenbewertung">
+                    <div id="slider">
+                        <input type="radio" name="slider" id="slide1" checked>
+                        <input type="radio" name="slider" id="slide2">
+                        <input type="radio" name="slider" id="slide3">
+                        <input type="radio" name="slider" id="slide4">
+                        <div id="slides">
+                            <div id="overflow">
+                                <div class="inner">
+                                    <div class="slide slide_1">
+                                        <div class="slide-content">
+                                            <h2>Slide 1</h2>
+                                            <p>Content for Slide 1</p>
+                                        </div>
+                                    </div>
+                                    <div class="slide slide_2">
+                                        <div class="slide-content">
+                                            <h2>Slide 2</h2>
+                                            <p>Content for Slide 2</p>
+                                        </div>
+                                    </div>
+                                    <div class="slide slide_3">
+                                        <div class="slide-content">
+                                            <h2>Slide 3</h2>
+                                            <p>Content for Slide 3</p>
+                                        </div>
+                                    </div>
+                                    <div class="slide slide_4">
+                                        <div class="slide-content">
+                                            <h2>Slide 4</h2>
+                                            <p>Content for Slide 4</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div id="controls">
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                            <label for="slide3"></label>
+                            <label for="slide4"></label>
+                        </div>
+                        <div id="bullets">
+                            <label for="slide1"></label>
+                            <label for="slide2"></label>
+                            <label for="slide3"></label>
+                            <label for="slide4"></label>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+
     </article>
     <footer>
         <div class="wrapper">
@@ -437,6 +444,7 @@
             <span> &copy Copyright 2022 DESIGN BY <a href="">JULIA PETERSEN</a></span>
         </div>
     </footer>
+    <script type="text/javascript" src="lib/jquery/jquery-3.6.0.min.js"></script>
     <script type="text/javascript" src="lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
     <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>

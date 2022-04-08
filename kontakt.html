@@ -65,7 +65,6 @@
                                     Pferde&nbsp;Schilder
                                 </a>
                                 <ul class="dropdown-menu" aria-labelledby="navbarDropdownMenuLink">
-                                    <li><a class="dropdown-item" href="#">Schilder</a></li>
                                     <li><a class="dropdown-item" href="#">Boxenschilder</a></li>
                                     <li><a class="dropdown-item" href="#">Spindschilder</a></li>
                                     <li><a class="dropdown-item" href="#">Warn & Schilder</a></li>
@@ -114,7 +113,6 @@
                     meine Produkte werden individuell, mit viel Liebe zum Detail, nach deinen Wünschen & Vorstellungen
                     gestaltet..
                 </p>
-                <a class="btn btn-primary" href="#" role="button">Kundenbewertung</a>
             </div>
         </div>
     </header>
@@ -123,31 +121,32 @@
         <section class="Kontakt">
             <div class="container">
                 <h3 class="text-center mt-5">Kontakt</h3>
-                <p class="text-center  font-italic mb-5">Bei Fragen gerne melden!</p>
+                <p class="text-center text-muted font-italic mb-5">Hinterlasse mir doch eine Nachricht!</p>
 
                 <form class="row g-3">
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="inputVorname" class="form-label">Vorname</label>
-                        <input type="vorname" class="form-control" id="inputVorname" placeholder="Vorname">
+                        <input type="text" class="form-control" id="inputVorname" placeholder="Vorname *" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="inputNachname" class="form-label">Nachname</label>
-                        <input type="nachname" class="form-control" id="inputNachname" placeholder="Nachname">
+                        <input type="text" class="form-control" id="inputNachname" placeholder="Nachname *" required>
                     </div>
                     <div class="col-12">
                         <label for="inputEmailAdresse" class="form-label">E-Mail-Address</label>
-                        <input type="text" class="form-control" id="inputEmailAddress" placeholder="E-Mail-Adresse">
+                        <input type="email" class="form-control" id="inputEmailAddress" placeholder="E-Mail-Adresse *"
+                            required>
                     </div>
                     <div class="col-12">
                         <label for="inputBetreff" class="form-label">Betreff</label>
-                        <input type="text" class="form-control" id="inputBetreff" placeholder="Betreff">
+                        <input type="text" class="form-control" id="inputBetreff" placeholder="Betreff *" required>
                     </div>
-                    <div class="col-md-6">
+                    <div class="col-md-12">
                         <label for="inputBestellnummer" class="form-label">Bestellnummer</label>
-                        <input type="text" class="form-control" id="inputBestellnummer" placeholder="Bestellnummer">
+                        <input type="number" class="form-control" id="inputBestellnummer" placeholder="Bestellnummer">
                     </div>
-                    <div class="col-md-4">
-                        <br> <label for="inputFrage" class="form-label mt-3">Ich habe Fragen zu?</label>
+                    <div class="col-md-12">
+                        <br> <label for="inputFrage" class="form-label mt-3">Ich habe Fragen zu?</label required>
                         <select id="inputFrage" class="form-Frage">
                             <option selected>Einer Bestellung</option>
                             <option>Deinen Produkten</option>
@@ -157,8 +156,8 @@
                     </div>
                     <div class="mb-3">
                         <label for="exampleFormControlNachricht" class="form-label">Deine Nachricht</label>
-                        <textarea class="form-control" id="exampleFormControlNachricht" placeholder="Nachricht"
-                            rows="3"></textarea>
+                        <textarea class="form-control" id="exampleFormControlNachricht" placeholder="Nachricht *"
+                            rows="3" required></textarea>
                     </div>
                     <div class="input-group mb-3">
                         <input type="file" class="form-control" id="inputGroupFile02">
@@ -166,7 +165,7 @@
                     </div>
                     <div class="form-check form-switch">
                         <input class="form-check-input" type="checkbox" role="switch"
-                            id="flexSwitchCheckDefaultDatenschutzerklärung">
+                            id="flexSwitchCheckDefaultDatenschutzerklärung" required>
                         <label class="form-check-label" for="flexSwitchCheckDefault">
                             <p>Ich habe die <a href="#">Datenschutzerklärung</a> zur Kenntnis
                                 genommen. Ich stimme zu, dass meine
@@ -174,19 +173,12 @@
                                 Rückfragen gespeichert werden.</p>
                         </label>
                     </div>
-                    <div class="col-12">
+                    <div class="col-md-6 btn-senden">
                         <button class="glow-on-hover mb-5 mt-3" type="submit">Senden</button>
                     </div>
                 </form>
-
-
-
-            </div>
             </div>
         </section>
-
-
-
     </article>
     <footer>
         <div class="wrapper">

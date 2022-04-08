@@ -11423,6 +11423,20 @@ body {
   background-repeat: no-repeat;
   border-bottom: 2px solid rgb(9, 204, 238);
   border-top: 1px solid rgb(9, 204, 238);
+  background-position: 50% 0%;
+}
+
+.container-header {
+  height: 1000px;
+}
+
+#suche-input {
+  border-radius: 10px;
+  border: 3px solid rgb(9, 204, 238);
+}
+
+.icons {
+  color: rgb(9, 204, 238);
 }
 
 a .logo {
@@ -11494,6 +11508,66 @@ h1, .h1 {
   width: 80px;
   height: auto;
   padding: 15px 15px 15px 10px;
+}
+
+/* ------------------------------- Home Lieblingsprudukte ---------------------------------------*/
+.bilder {
+  /* Large screens */
+}
+.bilder ul,
+.bilder li {
+  margin: 0.1em;
+  padding: 0.1em;
+}
+.bilder li {
+  display: inline-block;
+  list-style-type: none;
+  width: 45%;
+}
+.bilder img {
+  padding: 0;
+  margin: 0;
+  width: 100%;
+  /* Bild passt sich an verfügbaren Raum im li an */
+}
+.bilder button {
+  padding: 0.1em;
+}
+.bilder #galerie {
+  margin: 100px 0 150px 360px;
+}
+@media all and (min-width: 35em) {
+  .bilder li {
+    width: 10em;
+  }
+  .bilder button {
+    padding: 0.1em;
+    width: 10.2em;
+    height: 6.8em;
+    position: relative;
+  }
+  .bilder button img {
+    border: 0;
+    position: absolute;
+    left: 0%;
+    top: 0%;
+    z-index: 1;
+    box-shadow: 0;
+    width: 10em;
+    transition: all 1s;
+  }
+  .bilder button:focus img,
+.bilder button:hover img {
+    border: 2em solid #eee;
+    border-radius: 1em;
+    position: absolute;
+    left: -4%;
+    top: -4%;
+    width: 300%;
+    z-index: 5;
+    box-shadow: 1px 1px 5px #333;
+    transition: all 1s;
+  }
 }
 
 /* ------------------------------- Bereich in der mitte ---------------------------------------*/
@@ -11664,6 +11738,14 @@ footer .wrapper .box img:hover {
   background-color: rgb(30, 30, 30);
 }
 
+.form-control:focus {
+  border: 3px solid rgb(9, 204, 238);
+}
+
+#inputFrage {
+  margin-left: 20px;
+}
+
 .glow-on-hover {
   width: 220px;
   height: 50px;
@@ -11741,5 +11823,168 @@ footer .wrapper .box img:hover {
   }
   100% {
     background-position: 0 0;
+  }
+}
+@media (min-width: 768px) {
+  .btn-senden {
+    margin-left: 520px;
+  }
+}
+/* ------------------------------- Home Sildeshow für Kundenbewertung ---------------------------------------*/
+#slider {
+  margin: 0 auto;
+  margin-bottom: 50px;
+  width: 800px;
+  max-width: 100%;
+  text-align: center;
+}
+
+#slider input[type=radio] {
+  display: none;
+}
+
+#slider label {
+  cursor: pointer;
+  text-decoration: none;
+}
+
+#slides {
+  padding: 10px;
+  border: 3px solid #ccc;
+  background: #fff;
+  position: relative;
+  z-index: 1;
+}
+
+#overflow {
+  width: 100%;
+  overflow: hidden;
+}
+
+#slide1:checked ~ #slides .inner {
+  margin-left: 0;
+}
+
+#slide2:checked ~ #slides .inner {
+  margin-left: -100%;
+}
+
+#slide3:checked ~ #slides .inner {
+  margin-left: -200%;
+}
+
+#slide4:checked ~ #slides .inner {
+  margin-left: -300%;
+}
+
+#slides .inner {
+  transition: margin-left 800ms cubic-bezier(0.77, 0, 0.175, 1);
+  width: 400%;
+  line-height: 0;
+  height: 300px;
+}
+
+#slides .slide {
+  width: 25%;
+  float: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  color: #fff;
+}
+
+#slides .slide_1 {
+  background: #00171F;
+}
+
+#slides .slide_2 {
+  background: #005b9b;
+}
+
+#slides .slide_3 {
+  background: #31c0ef;
+}
+
+#slides .slide_4 {
+  background: #86d7f7;
+}
+
+#controls {
+  margin: -180px 0 0 0;
+  width: 100%;
+  height: 50px;
+  z-index: 3;
+  position: relative;
+}
+
+#controls label {
+  transition: opacity 0.2s ease-out;
+  display: none;
+  width: 50px;
+  height: 50px;
+  opacity: 0.4;
+}
+
+#controls label:hover {
+  opacity: 1;
+}
+
+#slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1) {
+  background: url(https://image.flaticon.com/icons/svg/130/130884.svg) no-repeat;
+  float: right;
+  margin: 0 -50px 0 0;
+  display: block;
+}
+
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+  background: url(https://image.flaticon.com/icons/svg/130/130882.svg) no-repeat;
+  float: left;
+  margin: 0 0 0 -50px;
+  display: block;
+}
+
+#bullets {
+  margin: 150px 0 0;
+  text-align: center;
+}
+
+#bullets label {
+  display: inline-block;
+  width: 10px;
+  height: 10px;
+  border-radius: 100%;
+  background: #ccc;
+  margin: 0 10px;
+}
+
+#slide1:checked ~ #bullets label:nth-child(1),
+#slide2:checked ~ #bullets label:nth-child(2),
+#slide3:checked ~ #bullets label:nth-child(3),
+#slide4:checked ~ #bullets label:nth-child(4) {
+  background: #444;
+}
+
+@media screen and (max-width: 900px) {
+  #slide1:checked ~ #controls label:nth-child(2),
+#slide2:checked ~ #controls label:nth-child(3),
+#slide3:checked ~ #controls label:nth-child(4),
+#slide4:checked ~ #controls label:nth-child(1),
+#slide1:checked ~ #controls label:nth-last-child(2),
+#slide2:checked ~ #controls label:nth-last-child(3),
+#slide3:checked ~ #controls label:nth-last-child(4),
+#slide4:checked ~ #controls label:nth-last-child(1) {
+    margin: 0;
+  }
+
+  #slides {
+    max-width: calc(100% - 140px);
+    margin: 0 auto;
   }
 }/*# sourceMappingURL=home.css.map */
